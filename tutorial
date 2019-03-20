@@ -1,0 +1,87 @@
+#### TUTORIAL GIT #####
+#https://www.youtube.com/watch?v=HiXLkL42tMU
+
+# Crear una carpeta en (por ejemplo) Escritorio y acceder a ella desde la consola
+#Una vez dentro de ésta:
+
+git init
+
+#Lo cual inicia un programa en git y te crea automáticamente la carpeta oculta .git
+
+
+#Necesitamos ver ahora qué archivos estamos trabajando
+
+git status
+
+#Lo que aparece en rojo son los archivos que no se han integrado en el entorno de trabajo de git (stagin area) (archivos que están en la carpeta que
+#estoy usando para mi proyecto, pero que no se han integrado a git
+#Se agregan con:
+
+git add <archivo>
+
+#Lo que mostrará el noembre del archivo agregado en color verde.
+
+
+#Ahora dar punto de partida.
+
+git commit
+
+#Falta darle datos del programador
+
+
+#Asignar un correo
+git config --global user.name "mauricio.fernandezg@gmail.com"
+
+
+#Asignar un nombre
+git config --global user.name "mauricio"
+
+
+#Iniciar el programa
+git commit
+
+con esto ya la pantalla cambia a una versión NANO (o similar BIN (con el que se escribe primero presionando "i"))
+
+#Al modificar el archivo NANO y guardar, damos un git commit
+
+git commit
+
+#De lo cual obtenemos la siguiente salida:
+
+#[master (root-commit) 7e15d4f] Maurooooo
+# 1 file changed, 0 insertions(+), 0 deletions(-)
+#create mode 100644 proyecto.pl
+
+
+#Lo cualk significa:
+
+#1 file changed  
+#(1 archivo ha cambiado)
+
+#0 insertions(+), 0 deletions(-) 
+#No se ha insertado ni eliminado ningún archivo
+
+
+#create mode 100644 proyecto.pl
+#Se ha creado un ID para cada archivo
+
+
+#¿Cómo diferenciar cada snap shot? (cada resultado que ha salido)
+
+git log
+
+#El cual asigna un ID o commit, señala el autor, correo y la fecha y hora en la que se empezó a hacer ese cambio.
+# Y el mensaje mas abajo.
+
+#commit 7e15d4fdbe04b14259c0791c54274e6df11cfe9c
+#Author: mauricio <mauricio.fernandezg@gmail.com>
+#Date:   Wed Mar 20 12:18:24 2019 -0300
+
+#Maurooooo
+
+
+
+
+
+
+
