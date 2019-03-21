@@ -1,6 +1,10 @@
 #### TUTORIAL GIT #####
 #https://www.youtube.com/watch?v=HiXLkL42tMU
 
+
+#SIEMPRE SE VA GENERANDO UN ARCHIVO "EXIT" DONDE SE VAN ALMACENANDO LOS CAMBIOS
+
+
 # Crear una carpeta en (por ejemplo) Escritorio y acceder a ella desde la consola
 #Una vez dentro de ésta:
 
@@ -80,6 +84,59 @@ git log
 #Maurooooo
 
 
+#Si le doy un git status
+git status
+
+#Me indica que no hay nada para hacer (commit) ya que como no se hizo una nueva modificación, no hay nada que el programa pueda hacer o registrar.
+
+
+#Si modifico un archivo con:
+
+gif diff <archivo>
+#puedo ver las diferencias o donde se modificó y cómo.
+#Todo lo que aparece después del signo + es lo que he agregado.
+
+
+#Si quiero deshacer lo que modifiqué (ojo que vuelve al inicio):
+git checkout -- <archivo>
+
+
+#Al modificar un archivo, éste sale de mi entorno de trabajo por lo que debo volver a agregarlo a entorno:
+
+git add <archivo>
+
+
+
+
+####SUBIR AL REPOSITORIO GIT-HUB#####
+
+#luego de add, commit se puede subir a github mediante el link que aparece en la página, similar a este:
+git remote add origin https://github.com/Mauriciofg/Anotacion.git
+
+#Y se cargan los datos mediante:
+git push -u origin master
+
+
+
+######## CÓMO SUBIR ACTUALIZACIONES A GITHUB ######
+DEBEN SER REALIZADOS TODOS LOS PASOS SECUENCIALMENTE.
+
+#SUPONGAMOS QUE CREAMOS EL ARCHIVO proyecto.pl y este ya está cargado en GitHub
+
+#Ahora lo modificamos
+
+#Luego de modificarlo hay que volver a subirlo al entorno
+
+git add proyecto.pl
+
+
+#Agregar un comentario
+
+git commit
+
+#Subir al repositorio para actualizar cambios
+
+git push -u origin master
 
 
 
